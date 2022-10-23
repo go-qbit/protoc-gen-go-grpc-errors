@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package qbit;
 
-option go_package = "github.com/go-qbit/protoc-gen-go-grpc-errors";
+option go_package = "github.com/go-qbit/protoc-gen-go-grpc-errors/pb";
 
 import "google/protobuf/descriptor.proto";
 
