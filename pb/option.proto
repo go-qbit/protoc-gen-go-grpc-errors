@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+import "qbit/errors.proto";
+
+message QBitMethodOptions {
+  repeated qbit.Error error = 55555;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package qbit;
+
+option go_package = "github.com/go-qbit/protoc-gen-go-grpc-errors";
+
+import "google/protobuf/descriptor.proto";
+
+message Error {
+  int32 code = 1;
+  string message = 2;
+}
+
+extend google.protobuf.MethodOptions {
+  repeated Error error = 55555;
+}
